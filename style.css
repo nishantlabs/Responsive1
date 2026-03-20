@@ -61,6 +61,7 @@ main section .bottom .text p {
   font-weight: 300;
   line-height: 1.7;
   font-size: 1.1rem;
+  opacity: 60%;
 }
 main section .bottom .text button {
   color: black;
@@ -70,4 +71,30 @@ main section .bottom .text button {
   outline: none;
   border-radius: 10px;
   padding: 0.7rem 1rem;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+  }
+  main section .top, main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 3.8rem;
+  }
+  main section .bottom .text {
+    gap: 1.7rem;
+  }
+  main section .bottom .text h1 {
+    font-size: 4rem;
+  }
+  main section .bottom .text p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+  main section .bottom .text button {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
