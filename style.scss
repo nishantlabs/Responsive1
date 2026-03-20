@@ -48,14 +48,14 @@ main{
 
             img{
                 width:100%;
-                border-radius: 10px;
+                border-radius: 0.7rem;
             }
         }
         .bottom{
             background-color: #333;
             @include flex-column(3rem);
             padding:1rem;
-            border-radius: 10px;
+            border-radius: 0.7rem;
             .text{
                 @include flex-column(0.7rem);
 
@@ -110,6 +110,51 @@ main{
         
 
     }
+
+    section.view3{
+        width:100%;
+        @include flex-column(1rem);
+        padding:1rem;
+
+        .top,.bottom{
+            width:100%;
+            @include flex-column(1rem);
+        }
+
+        .top{
+            img{
+                width:100%;
+                border-radius: 0.7rem;
+            }
+        }
+        .bottom>p{
+                text-transform: uppercase;
+            }
+        .bottom{
+            background-color: #333;
+            @include flex-column(3rem);
+            padding:1rem;
+            border-radius: 0.7rem;
+            
+            .text{
+                @include flex-column(1rem);
+
+                h2{
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+
+                p{
+                    font-weight: 300;
+                    line-height: 1.7;
+                    font-size: 1.1rem;
+                    opacity:60%;  
+                      
+                }
+            }
+        }
+    }
 }
 
 @media (min-width:900px){
@@ -148,6 +193,36 @@ main{
                 
                 flex-direction:row;
                 padding:1rem 4rem;
+            }
+
+            section.view3{
+                flex-direction: row-reverse;
+                padding:1rem 4rem;
+
+                .top,.bottom{
+                    width: 50%;
+                }
+
+                .bottom{
+                    justify-content: space-between;
+                    padding:3.8rem;
+
+                    .text{
+                        display: flex;
+                        gap:1.7rem;
+                        h2{
+                            width:80%;
+                            font-size: 2.8rem;
+                        }
+
+                        .paragraphs{
+                            font-size: 1.2rem;
+                            display:flex;
+                            gap:2rem; 
+                        }
+                    }
+
+                }
             }
     }
 }
