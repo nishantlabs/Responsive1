@@ -25,6 +25,10 @@ body{
     gap:$gap;
 }
 
+section{
+    max-width:2000px;
+}
+
 main{
     width:100%;
     @include flex-column(0rem);
@@ -109,5 +113,12 @@ main{
                     }
                 }
             }
+    }
+}
+
+@media (min-width:2000px){
+    main{
+        flex-direction: row;
+        justify-content:center ;
     }
 }

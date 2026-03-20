@@ -19,6 +19,10 @@ body {
   background-color: black;
 }
 
+section {
+  max-width: 2000px;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -96,5 +100,11 @@ main section .bottom .text button {
   }
   main section .bottom .text button {
     font-size: 1rem;
+  }
+}
+@media (min-width: 2000px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
