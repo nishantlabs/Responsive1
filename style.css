@@ -43,7 +43,7 @@ main section .bottom {
   background-color: #333;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 3rem;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -54,9 +54,20 @@ main section .bottom .text {
 }
 main section .bottom .text h1 {
   font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+main section .bottom .text p {
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 main section .bottom .text button {
   color: black;
   width: -moz-fit-content;
   width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
 }/*# sourceMappingURL=style.css.map */
