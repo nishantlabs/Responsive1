@@ -312,6 +312,46 @@ main{
         }
     }
 
+    section.view8 {
+        width: 100%;
+        padding: 2rem;
+        background-color: rgb(188, 188, 51);
+        border-radius: 0.7rem;
+
+        .bottom {
+            @include flex-column(1rem); 
+            gap: 1rem;
+
+            small {
+                font-size: 0.8rem;
+                letter-spacing: 2px;
+                color:black;
+            }
+
+            .text {
+                @include flex-column(1rem);
+                gap: 1rem;
+
+                h1 {
+                    font-size: 4rem;
+                    font-weight: 400;
+                    max-width: 70%;
+                    line-height: 1.2;
+                    color:black;
+                }
+
+                button {
+                    background: black;
+                    color: white;
+                    padding: 0.8rem 1.5rem;
+                    border: none;
+                    border-radius: 0.7rem;
+                    white-space: nowrap;
+                    width: fit-content;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width:900px){
@@ -448,6 +488,7 @@ main{
                     }
                 }
             }
+            
     }
 }
 
