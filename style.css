@@ -210,7 +210,7 @@ main section.view6 {
   width: 100%;
   display: flex;
   gap: 2rem;
-  padding: 1rem;
+  padding: 4rem;
 }
 main section.view6 .card:nth-child(1) {
   background-image: url("./card1.webp");
@@ -292,6 +292,7 @@ main section.view7 .bottom .text {
 main section.view7 .bottom .text h1 {
   font-size: 3rem;
   font-weight: 300;
+  text-transform: uppercase;
 }
 main section.view7 .bottom .text button {
   border: none;
@@ -386,8 +387,31 @@ main section.view7 .bottom .text button {
   main section.view4 .bottom .text .paragraphs p {
     width: 50%;
   }
+  main section.view5 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
   main section.view6 {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  main section.view7 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view7 .top, main section.view7 .bottom {
+    width: 50%;
+  }
+  main section.view7 .bottom {
+    padding: 3.8rem;
+  }
+  main section.view7 .bottom .text {
+    gap: 15rem;
+  }
+  main section.view7 .bottom .text h1 {
+    width: 70%;
+  }
+  main section.view7 .bottom .text button {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

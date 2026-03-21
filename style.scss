@@ -217,7 +217,7 @@ main{
         width:100%;
         display:flex;
         gap:2rem;
-        padding:1rem;
+        padding:4rem;
         
         .card:nth-child(1){
             background-image: url("./card1.webp");
@@ -275,7 +275,6 @@ main{
 
         .top,.bottom{
             width: 100%;
-
         }
 
         .top{
@@ -286,8 +285,7 @@ main{
         }
         .bottom>p{
             text-transform: uppercase;
-            font-weight: 400;
-            
+            font-weight: 400;   
         }
         .bottom{
             background-color: #333;
@@ -300,6 +298,7 @@ main{
                 h1{
                     font-size: 3rem;
                     font-weight: 300;
+                    text-transform: uppercase;
                 }
                 button{
                     border:none;
@@ -419,10 +418,35 @@ main{
                     }
                 }
             }
-
+            section.view5{
+                flex-direction:row;
+                padding:1rem 4rem;
+            }
             section.view6{
                 flex-direction: row;                
                 justify-content: space-evenly;
+            }
+
+            section.view7{
+                flex-direction: row;
+                padding:1rem 4rem;
+
+                .top,.bottom{
+                    width:50%;
+                }
+
+                .bottom{
+                    padding:3.8rem;
+                    .text{
+                        gap:15rem;
+                        h1{
+                            width:70%;
+                        }
+                        button{
+                            font-size:1rem;
+                        }
+                    }
+                }
             }
     }
 }
