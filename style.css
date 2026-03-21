@@ -75,7 +75,7 @@ main section.view1 .bottom .text button {
   width: fit-content;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.7rem;
   padding: 0.7rem 1rem;
 }
 main section.view2 {
@@ -194,12 +194,35 @@ main section.view4 .bottom .text p {
 main section.view5 {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view5 .text > p {
+  width: 100%;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+main section.view6 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
   gap: 2rem;
   padding: 1rem;
 }
-main section.view5 .card {
+main section.view6 .card:nth-child(1) {
+  background-image: url("./card1.webp");
+}
+main section.view6 .card:nth-child(2) {
+  background-image: url("./card2.webp");
+}
+main section.view6 .card:nth-child(3) {
+  background-image: url("./card3.webp");
+}
+main section.view6 .card {
   width: 100%;
-  background-image: url("./4th_top.webp");
   aspect-ratio: 1/1;
   background-size: cover;
   border-radius: 0.7rem;
@@ -209,29 +232,75 @@ main section.view5 .card {
   justify-content: space-between;
   padding: 1rem;
 }
-main section.view5 .card .icons, main section.view5 .card .bottom {
+main section.view6 .card .icons, main section.view6 .card .bottom {
   background-color: rgba(172, 172, 172, 0.5921568627);
   backdrop-filter: blur(5px);
   border: 1px solid white;
   border-radius: 0.7rem;
   padding: 1rem 1rem;
 }
-main section.view5 .card .top {
+main section.view6 .card .top {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
   justify-content: flex-end;
 }
-main section.view5 .card .bottom {
+main section.view6 .card .bottom {
   display: flex;
   justify-content: space-between;
 }
-main section.view5 .card .bottom p {
+main section.view6 .card .bottom p {
   text-transform: uppercase;
 }
-main section.view5 .card .icons {
+main section.view6 .card .icons {
   border-radius: 50%;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: small;
+}
+main section.view7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view7 .top, main section.view7 .bottom {
+  width: 100%;
+}
+main section.view7 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view7 .bottom > p {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main section.view7 .bottom {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+main section.view7 .bottom .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+main section.view7 .bottom .text h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+main section.view7 .bottom .text button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  border-radius: 0.7rem;
 }
 
 @media (min-width: 900px) {
@@ -316,5 +385,9 @@ main section.view5 .card .icons {
   }
   main section.view4 .bottom .text .paragraphs p {
     width: 50%;
+  }
+  main section.view6 {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=style.css.map */
