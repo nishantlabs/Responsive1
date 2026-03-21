@@ -163,8 +163,7 @@ main{
 
         .top,.bottom{
             width:100%;
-            @include flex-column(3rem);
-
+            @include flex-column(1rem);
         }
 
         .top{
@@ -172,17 +171,16 @@ main{
                 width:100%;
                 border-radius: 0.7rem;
             }
-
-        .bottom>p{
-            text-transform: uppercase;
         }
-
+        .bottom>p{
+                text-transform: uppercase;
+            }
         .bottom{
             background-color: #333;
             @include flex-column(3rem);
             padding:1rem;
             border-radius: 0.7rem;
-
+            
             .text{
                 @include flex-column(1rem);
 
@@ -192,16 +190,17 @@ main{
                     font-size: 2rem;
                 }
 
-                .paragraphs{
+                p{
                     font-weight: 300;
                     line-height: 1.7;
                     font-size: 1.1rem;
                     opacity:60%;  
+                      
                 }
             }
         }
-        }
     }
+
 }
 
 @media (min-width:900px){
@@ -267,8 +266,45 @@ main{
                             display:flex;
                             gap:2rem; 
                         }
+
+                        .paragraphs p{
+                            width:50%;  
+                        }
                     }
 
+                }
+            }
+
+            section.view4{
+                flex-direction: row;
+                padding:1rem 4rem;
+
+                .top,.bottom{
+                    width:50%;
+                }
+
+                .bottom{
+                    justify-content: space-between;
+                    padding:3.8rem;
+
+                    .text{
+                        display: flex;
+                        gap:1.7rem;
+                        h2{
+                            width:80%;
+                            font-size: 2.8rem;
+                        }
+
+                        .paragraphs{
+                            font-size: 1.2rem;
+                            display:flex;
+                            gap:2rem; 
+                        }
+
+                        .paragraphs p{
+                            width:50%;  
+                        }
+                    }
                 }
             }
     }
