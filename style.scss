@@ -201,6 +201,52 @@ main{
         }
     }
 
+    section.view5{
+        width:100%;
+        display:flex;
+        gap:2rem;
+        padding:1rem;
+        
+
+        .card{
+            width:100%;
+            background-image: url("./4th_top.webp");
+            aspect-ratio: 1/1;
+            background-size: cover;
+            border-radius: 0.7rem;
+
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+            .icons,.bottom{
+                background-color: #acacac97;
+                backdrop-filter: blur(5px);
+                border:1px solid white;
+                border-radius: 0.7rem;
+                padding:1rem 1rem;
+            }
+            .top{
+                display: flex;
+                gap:0.5rem;
+                justify-content: flex-end;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+
+                p{
+                    text-transform: uppercase;
+                }
+            }
+
+            .icons{
+                border-radius: 50%;
+                width: fit-content;
+            }
+        }
+    }
+
 }
 
 @media (min-width:900px){
